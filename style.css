@@ -642,7 +642,7 @@ section{
   .header .navbar{
     position: absolute;
     top: 110%; right: -110%;
-    width: 30rem;
+    width: 25rem;
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     background: var(--white);
@@ -679,6 +679,10 @@ section{
     font-size: 50%;
   }
 
+  .header .navbar{
+    width: 15rem;
+  }
+
   .home .content h3{
     font-size: 3.5rem;
   }
@@ -694,6 +698,9 @@ section{
 }
 
 @media (max-width:360px){
+  .header .navbar{
+    width: 10rem;
+  }
   .progress-bar{
     width: 5px;
   }
