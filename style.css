@@ -257,16 +257,16 @@ section{
 }
 
 /* end */
- 
-/* subjects  */
 
-.subjects  .box-container{
+/* education */
+
+.education .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
-.subjects  .box-container .box{
+.education .box-container .box{
   background: var(--white);
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
@@ -275,19 +275,19 @@ section{
   overflow: hidden;
 }
 
-.subjects  .box-container .box:hover img{
+.education .box-container .box:hover img{
   transform: scale(1.1);
 }
 
-.subjects  .box-container .box:nth-child(odd){
+.education .box-container .box:nth-child(odd){
   background: var(--pink);
 }
 
-.subjects  .box-container .box:nth-child(2){
+.education .box-container .box:nth-child(2){
   background: var(--orange);
 }
 
-.subjects  .box-container .box h3{
+.education .box-container .box h3{
   font-size: 2.5rem;
   color: var(--white);
   line-height: 1.8;
@@ -295,14 +295,14 @@ section{
   padding-left: 2rem;
 }
 
-.subjects  .box-container .box p{
+.education .box-container .box p{
   font-size: 1.5rem;
   line-height: 1.8;
   color: var(--white);
   padding: 1rem 2rem;
 }
 
-.subjects  .box-container .box img{
+.education .box-container .box img{
   width: 100%;
   height: 66%;
 }
