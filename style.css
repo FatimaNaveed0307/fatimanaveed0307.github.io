@@ -258,15 +258,15 @@ section{
 
 /* end */
 
-/* education */
+/* subjects  */
 
-.education .box-container{
+.subjects  .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
-.education .box-container .box{
+.subjects  .box-container .box{
   background: var(--white);
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
@@ -275,19 +275,19 @@ section{
   overflow: hidden;
 }
 
-.education .box-container .box:hover img{
+.subjects  .box-container .box:hover img{
   transform: scale(1.1);
 }
 
-.education .box-container .box:nth-child(odd){
+.subjects  .box-container .box:nth-child(odd){
   background: var(--pink);
 }
 
-.education .box-container .box:nth-child(2){
+.subjects  .box-container .box:nth-child(2){
   background: var(--orange);
 }
 
-.education .box-container .box h3{
+.subjects  .box-container .box h3{
   font-size: 2.5rem;
   color: var(--white);
   line-height: 1.8;
@@ -295,14 +295,14 @@ section{
   padding-left: 2rem;
 }
 
-.education .box-container .box p{
+.subjects  .box-container .box p{
   font-size: 1.5rem;
   line-height: 1.8;
   color: var(--white);
   padding: 1rem 2rem;
 }
 
-.education .box-container .box img{
+.subjects  .box-container .box img{
   width: 100%;
   height: 66%;
 }
