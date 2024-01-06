@@ -2,7 +2,7 @@
 
 :root{
     --orange:#fad49f; /*#f8cb8c*/
-    --pink:#f38ea4;
+    --pink:#44a3bd;
     --black: #1d1c1c;
     --white: #fff;
     --light-color:#666;
@@ -683,6 +683,11 @@ section{
     width: 10rem;
   }
 
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
   .home .content h3{
     font-size: 3.5rem;
   }
@@ -700,6 +705,10 @@ section{
 @media (max-width:360px){
   .header .navbar{
     width: 7rem;
+  }
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
   }
   .progress-bar{
     width: 5px;
@@ -726,7 +735,7 @@ section{
 
 .progress-bar {
   height: 5px;
-  background-color: #fd8711; /* Change this color if needed */
+  background-color: #00799a; /* Change this color if needed */
   width: 0%;
 }
 
