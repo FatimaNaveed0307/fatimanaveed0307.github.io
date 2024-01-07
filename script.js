@@ -122,3 +122,33 @@ document.onmousemove = function(e) {
         i = 0;
     }
 };
+
+// notify user that the message has been delivered
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Simulate message sending (setTimeout is used here for demonstration)
+  setTimeout(function() {
+      showMessageDelivered();
+  }, 2000); // Change the time as needed
+
+  // Reset form fields after submission (optional)
+  this.reset();
+});
+
+function showMessageDelivered() {
+  // Select the notification element
+  const notification = document.getElementById('notification');
+
+  // Display the notification message
+  notification.textContent = 'Message delivered successfully!';
+  
+  // Add a class to trigger the animation
+  notification.classList.add('show');
+
+  // Clear the notification after a few seconds
+  setTimeout(function() {
+      notification.textContent = '';
+      notification.classList.remove('show');
+  }, 3000); // Change the time as needed
+}

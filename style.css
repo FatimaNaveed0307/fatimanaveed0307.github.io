@@ -1,14 +1,20 @@
+/* CSS code */
+/* coded with my own knowledge and bits of code taken from tutorials and online resources like github, youtube, w3 schools etc */
+
+/* importing the font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+/* creating variables */
 :root{
     --orange:#fad49f; /*#f8cb8c*/
-    --pink:#44a3bd;
+    --blue:#44a3bd;
     --black: #1d1c1c;
     --white: #fff;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
+/* changing the default values */
 *{
   font-family: 'Poppins', sans-serif;
   margin: 0; padding: 0;
@@ -19,17 +25,19 @@
   transition: all .2s linear;
 }
 
-
+/* styling the html tag */
 html{
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+/* adding padding to each section */
 section{
   padding: 3rem 7%;
 }
 
+/* styling headings */
 .heading{
   font-size: 4rem;
   color: var(--black);
@@ -39,11 +47,13 @@ section{
   margin-bottom: 6rem;
 }
 
+/* different color for span tag */
 .heading span{
   color: var(--orange);
   text-transform: uppercase;
 }
 
+/* styling the button */
 .btn{
   font-size: 1.7rem;
   margin-top: 1rem;
@@ -56,13 +66,14 @@ section{
   cursor: pointer;
 }
 
+/* adding a hover effect */
 .btn:hover{
   background: var(--orange);
   color: var(--white);
 }
 
-/* header */
 
+/* styling the header */
 .header{
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -75,16 +86,19 @@ section{
   box-shadow: var(--box-shadow);
 }
 
+/* making the logo bolder */
 .header .logo{
   font-size: 2.5rem;
   font-weight: bolder;
   color: var(--black);
 }
 
+/* logo link color */
 .header .logo i{
   color: var(--orange);
 }
 
+/* styling the navbar links */
 .header .navbar a{
   font-size: 1.7rem;
   margin: 0 1rem;
@@ -103,10 +117,12 @@ section{
   cursor: pointer;
 }
 
+/* setting the menu button display to none for desktop */
 #menu-btn{
   display: none;
 }
 
+/* styling the login form */
 .header .login-form{
   position: absolute;
   top: 110%; right: -110%;
@@ -118,11 +134,13 @@ section{
   text-align: center;
 }
 
+/* adding transition to the login form */
 .header .login-form.active{
   right: 2rem;
   transition: .4s linear;
 }
 
+/* styling the h3 tag for the login form */
 .header .login-form h3{
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -147,37 +165,39 @@ section{
 }
 
 .header .login-form p a{
-  color: var(--orange);
+  color: var(--orange); /* calling the variable */
   text-decoration: underline;
 }
+/* ending of the header stylying */
 
-/* header ends */
-
-/* home */
-
+/* styling the home page area */
 .home{
   min-height: 100vh;
-  display: flex;
+  display: flex; /* setting the display as flex */
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.5rem; /* specifying the gap */
   align-items: center;
   position: relative;
 }
 
+/* styling the content */
 .home .content{
   flex: 1 1 40rem;
   padding-top: 6.5rem;
 }
 
+/* styling the h3 tag */
 .home .content h3{
   font-size: 6rem;
   color: var(--black);
 }
 
+/* calling the orange color variable for the span tag */
 .home .content h3 span{
   color: var(--orange);
 }
 
+/* styling the p tag */
 .home .content p{
   font-size: 1.7rem;
   color: var(--light-color);
@@ -185,6 +205,7 @@ section{
   padding: 1rem 0;
 }
 
+/* flex for the image */
 .home .image{
   flex: 1 1 40rem;
 }
@@ -194,6 +215,7 @@ section{
   padding: 4rem;
 }
 
+/* styling the custom shape divider */
 .custom-shape-divider {
   position: absolute;
   bottom: 0;
@@ -203,6 +225,7 @@ section{
   line-height: 0;
 }
 
+/* styling the svg */
 .custom-shape-divider svg {
   position: relative;
   display: block;
@@ -212,37 +235,41 @@ section{
 }
 
 .custom-shape-divider .shape-fill {
-  fill: var(--pink);
+  fill: var(--blue);
 }
+/* end of the home page styling*/
 
-/* end */
 
-/* about us */
-
+/* code for styling the about us area */
 .about{
-  background: var(--pink);
+  background: var(--blue); /* setting the bg color by calling the blue color variable */
 }
 
+/* styling the row */
 .about .row{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex; /* setting the display as flex */
+  align-items: center; /* aligning everything to the center */
+  flex-wrap: wrap; /* using flex wrap */
   gap: 2rem;
 }
 
+/* flex for the image */
 .about .row .image{
   flex: 1 1 50rem;
 }
 
+/* width and height for the img tag */
 .about .row .image img{
   width: 100%;
   height: 100%;
 }
 
+/* content flex */
 .about .row .content{
   flex: 1 1 40rem;
 }
 
+/* styling the h3 tag */
 .about .row .content h3{
   font-size: 3.5rem;
   color: var(--white);
@@ -255,17 +282,19 @@ section{
   padding: 1rem 0;
   line-height: 2;
 }
+/* end of the about us area styling */
 
-/* end */
 
-/* education */
 
+/* css code for styling the education area */
+/* setting the display as grid format */
 .education .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
+/* styling the box container and its elements with the box class */
 .education .box-container .box{
   background: var(--white);
   border-radius: 2rem;
@@ -275,18 +304,22 @@ section{
   overflow: hidden;
 }
 
+/* hover effect */
 .education .box-container .box:hover img{
   transform: scale(1.1);
 }
 
+/* setting the bg as blue for the odd numberd box */
 .education .box-container .box:nth-child(odd){
-  background: var(--pink);
+  background: var(--blue);
 }
 
+/* setting  bg to orange for the box at index value 2 */
 .education .box-container .box:nth-child(2){
   background: var(--orange);
 }
 
+/* styling the h3 tag */
 .education .box-container .box h3{
   font-size: 2.5rem;
   color: var(--white);
@@ -295,6 +328,7 @@ section{
   padding-left: 2rem;
 }
 
+/* styling the p tag */
 .education .box-container .box p{
   font-size: 1.5rem;
   line-height: 1.8;
@@ -302,27 +336,29 @@ section{
   padding: 1rem 2rem;
 }
 
+/* width and height for the image */
 .education .box-container .box img{
   width: 100%;
   height: 66%;
 }
+/* ending of code for the styling of education area */
 
-/* end */
 
-/* teacher */
-
+/* code for styling the teachers area */
 .teacher{
-  background: url(images/teacher-bg.png) no-repeat;
+  background: url(images/teacher-bg.png) no-repeat; /* setting a background */
   background-position: center;
   background-size: cover;
 }
 
+/* using grid for the box container */
 .teacher .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
+/* styling each box */
 .teacher .box-container .box{
   background: var(--white);
   padding: 3rem 2rem;
@@ -331,21 +367,25 @@ section{
   border-radius: 2rem;
 }
 
+/* styling the teacher image */
 .teacher .box-container .box img{
   height: 30rem;
 }
 
+/* styling the h3 tag */
 .teacher .box-container .box h3{
   font-size: 2.5rem;
   color: var(--black);
 }
 
+/* styling the p tag */
 .teacher .box-container .box p{
   font-size: 1.7rem;
   color: var(--light-color);
   margin-bottom: 1rem;
 }
 
+/* styling the social media icons */
 .teacher .box-container .box .share i{
   height: 4.5rem;
   width: 4.5rem;
@@ -353,29 +393,30 @@ section{
   font-size: 2rem;
   border-radius: .5rem;
   background: none;
-  color: var(--pink);
-  border: .1rem solid var(--pink);
+  color: var(--blue);
+  border: .1rem solid var(--blue);
   margin-left: .5rem;
   box-shadow: var(--box-shadow);
   cursor: pointer;
 }
 
+/* hover effect */
 .teacher .box-container .box .share i:hover{
   color: var(--white);
   border: .1rem solid var(--orange);
   background: var(--orange);
 }
+/* ending of the code for styling the teachers area */
 
-/* end */
 
-/* activities */
-
+/* styling the activities area */
 .activities .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  display: grid; /* using grid */
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /* defining the columns */
   gap: 1.5rem;
 }
 
+/* styling the box container and its elements */
 .activities .box-container .box{
   padding: 3rem 2rem;
   text-align: center;
@@ -385,51 +426,58 @@ section{
   outline-offset: -1rem;
 }
 
+/* specifying the height for box img */
 .activities .box-container .box img{
   height: 8rem;
 }
 
+/* hover effect */
 .activities .box-container .box:hover img{
   transform: scale(1.1);
 }
 
+/* styling the h3 tag */
 .activities .box-container .box h3{
   font-size: 2.2rem;
   padding: 2rem 0;
   color: var(--black);
 }
+/* ending of the code for styling the activities area */
 
-/* end */
 
-/* gallery */
-
+/* code for styling the gallery */
 .gallery{
-  background: url(images/gallery-bg.png) no-repeat;
-  background-size: cover; 
+  background: url(images/gallery-bg.png) no-repeat; /* setting a specific background */
+  background-size: cover;
 }
 
+/* using grid for the images */
 .gallery .gallery-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* defining the columns */
   gap: 2rem;
 }
 
+/* styling the container and its elements */
 .gallery .gallery-container .box{
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 
+/* styling the img */
 .gallery .gallery-container .box img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+/* hover effect for the img */
 .gallery .gallery-container .box:hover img{
   transform: scale(1.2);
 }
 
+/* styling the icon */
 .gallery .gallery-container .box .icon{
   align-items: center;
   justify-content: center;
@@ -450,17 +498,17 @@ section{
 .gallery .gallery-container .box:hover .icon{
   display: flex;
 }
+/* ending of the gallery styling code */
 
-/* end */
 
-/* contact */
-
+/* code for styling the contact us code */
 .contact .icons-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+  display: grid; /* using grid */
+  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr)); /* defining the columns */
   gap: 1.5rem;
 }
 
+/* styling the icons */
 .contact .icons-container .icons{
   padding: 2rem;
   box-shadow: var(--box-shadow);
@@ -470,6 +518,7 @@ section{
   outline-offset: -1rem;
 }
 
+/* styling the i tag text */
 .contact .icons-container .icons i{
   font-size: 2.5rem;
   height: 6rem;
@@ -480,25 +529,29 @@ section{
   background: var(--orange);
 }
 
+/* styling the h3 tag */
 .contact .icons-container .icons h3{
   font-size: 2.2rem;
   padding: 1rem 0;
   color: var(--black);
 }
 
+/* styling the p tag */
 .contact .icons-container .icons p{
   font-size: 1.5rem;
   line-height: 2;
   color: var(--light-color);
 }
 
+/* styling the row class */
 .contact .row{
-  display: flex;
+  display: flex; /* setting display to flex wrap */
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.5rem; /* specifying the gap */
   margin-top: 4rem;
 }
 
+/* flex values for the image */
 .contact .row .image{
   flex: 1 1 20rem;
 }
@@ -507,6 +560,7 @@ section{
   width: 100%;
 }
 
+/* styling the contact form */
 .contact .row form{
   flex: 1 1 50rem;
   padding: 2rem;
@@ -515,12 +569,14 @@ section{
   border-radius: .5rem;
 }
 
+/* styling the form headings */
 .contact .row form h3{
   font-size: 3rem;
   padding-bottom: 1rem;
   color: var(--black);
 }
 
+/* styling the input box */
 .contact .row form .inputBox{
   display: flex;
   flex-wrap: wrap;
@@ -531,6 +587,7 @@ section{
   width: 49%;
 }
 
+/* styling the input box and the text areas */
 .contact .row form .inputBox input,
 .contact .row form textarea{
   font-size: 1.6rem;
@@ -551,27 +608,28 @@ section{
   width: 100%;
   resize: none;
 }
+/* ending of the contact us area style code */
 
-/* end */
 
-/* footer */
-
+/* css code for styling the footer */
 .footer{
-  background: var(--pink);
+  background: var(--blue); /* calling the blue color variable and setting the bg to blue */
 }
 
 .footer .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  display: grid; /* setting the display as grid format */
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr)); /* defining the columns */
   gap: 1.5rem;
 }
 
+/* styling the h3 tag */
 .footer .box-container .box h3{
   font-size: 2.2rem;
   color: var(--orange);
   padding: 1rem 0;
 }
 
+/* styling the p tag in the footer */
 .footer .box-container .box p{
   font-size: 1.5rem;
   color: var(--white);
@@ -579,6 +637,7 @@ section{
   line-height: 2;
 }
 
+/* styling the links */
 .footer .box-container .box a{
   display: block;
   font-size: 1.4rem;
@@ -586,6 +645,7 @@ section{
   padding: 1rem 0;
 }
 
+/* hover effect */
 .footer .box-container .box a:hover{
   color: var(--orange);
 }
@@ -595,6 +655,7 @@ section{
   color: var(--orange);
 }
 
+/* styling the credits class */
 .footer .credit{
   margin-top: 2.5rem;
   padding: 1rem;
@@ -605,118 +666,31 @@ section{
   font-size: 2rem;
 }
 
+/* calling the variable of orange color for the span */
 .footer .credit span{
   color: var(--orange);
 }
+/* ending of footer area code */
 
-/* end */
 
-/* media query */
 
-@media (max-width:991px){
-
-  html{
-    font-size: 55%;
-  }
-
-  .header{
-    padding: 2rem 3rem;
-  }
-
-  section{
-    padding: 3rem;
-  }
-
-  .progress-bar {
-    height: 4px;
-  }
-
+.notification-box {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d59967;
+  color: white;
+  padding: 15px;
+  display: none;
+  transition: top 0.5s ease-in-out;
 }
 
-@media (max-width:768px){
-
-  #menu-btn{
-    display: inline-block;
-  }
-
-  .header .navbar{
-    position: absolute;
-    top: 110%; right: -110%;
-    width: 25rem;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    background: var(--white);
-  }
-
-  .header .navbar.active{
-    right: 2rem;
-    transition: .4s linear;
-  }
-
-  .header .navbar a{
-    font-size: 2rem;
-    margin: 2rem 2.5rem;
-    display: block;
-  }
-
-  .home .content h3{
-    font-size: 4.5rem;
-  }
-  
-  .progress-bar {
-    height: 3px; 
-    width: 30px;
-  }
-
-  .progress-container{
-    width: 30px;
-  }
-
+.notification-box.show {
+  top: 200px;
+  display: block;
 }
 
-@media (max-width:450px){
-  html{
-    font-size: 50%;
-  }
-
-  .header .navbar{
-    width: 10rem;
-  }
-
-  .header .navbar.active{
-    right: 2rem;
-    transition: .4s linear;
-  }
-
-  .home .content h3{
-    font-size: 3.5rem;
-  }
-
-  .progress-bar {
-    height: 2px; 
-    width: 10px;
-  }
-
-  .progress-container{
-    width: 10px;
-  }
-}
-
-@media (max-width:360px){
-  .header .navbar{
-    width: 7rem;
-  }
-  .header .navbar.active{
-    right: 2rem;
-    transition: .4s linear;
-  }
-  .progress-bar{
-    width: 5px;
-  }
-  .progress-container{
-    width: 5px;
-  }
-}
 
 .header {
   position: fixed;
@@ -769,5 +743,112 @@ section{
   to{
       opacity: 0;
       transform: scale(1);
+  }
+}
+
+
+/* code for the media queries */
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem 3rem;
+  }
+
+  section{
+    padding: 3rem;
+  }
+
+  .progress-bar {
+    height: 4px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 25rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 4.5rem;
+  }
+
+  .progress-bar {
+    height: 3px;
+    width: 30px;
+  }
+
+  .progress-container{
+    width: 30px;
+  }
+
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 50%;
+  }
+
+  .header .navbar{
+    width: 10rem;
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+
+  .home .content h3{
+    font-size: 3.5rem;
+  }
+
+  .progress-bar {
+    height: 2px;
+    width: 10px;
+  }
+
+  .progress-container{
+    width: 10px;
+  }
+}
+
+@media (max-width:360px){
+  .header .navbar{
+    width: 7rem;
+  }
+  .header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+  }
+  .progress-bar{
+    width: 5px;
+  }
+  .progress-container{
+    width: 5px;
   }
 }

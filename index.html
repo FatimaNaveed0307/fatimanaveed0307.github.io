@@ -1,9 +1,15 @@
+<!--Fatima Naveed's Web Dev II Website-->
+<!-- Kinder Korner Kindergarten -->
+<!--This website was coded with the help of my own coding knowledge, online resources such as github, codrops, google fonts, youtube tutorials-->
+<!--Detailed comments are added for the code to be easily understood by anyone who reads it-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding a title and title tab image beside it -->
     <title> Kinder Korner Kindergarten</title>
     <link rel="icon" type="image/png" href="images/icon.png">
     <!-- font awesome cdn link  -->
@@ -16,7 +22,7 @@
 <body>
     
 
-    <!-- header section starts -->
+    <!-- creating a header section -->
 
     <!-- Progress bar -->
     <div class="progress-container">
@@ -344,7 +350,7 @@
             </div>
 
             <!-- creating the contact form -->
-            <form action="">
+            <form id="contactForm" action="send_email.php" method="POST">
                 <h3>get in touch</h3>
                 <!-- input box for name and email -->
                 <div class="inputBox">
@@ -360,6 +366,9 @@
                 <textarea placeholder="your message" cols="30" rows="10"></textarea>
                 <input type="submit" value="send message" class="btn">
             </form>
+            <div id="notification" class="notification-box"></div>
+
+
 
         </div>
 
