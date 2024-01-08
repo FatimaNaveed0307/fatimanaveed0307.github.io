@@ -673,7 +673,7 @@ section{
 /* ending of footer area code */
 
 
-
+/* styling the notification box which appears when the user sends a message */
 .notification-box {
   position: fixed;
   top: 0;
@@ -691,7 +691,7 @@ section{
   display: block;
 }
 
-
+/* styling the progress bar header class */
 .header {
   position: fixed;
   top: 0;
@@ -699,20 +699,23 @@ section{
   z-index: 1;
 }
 
+/* styling the progress bar container div */
 .progress-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999; /* Ensures it's above other elements */
+  z-index: 9999; /* Ensuring the progressbar is above other elements */
 }
 
+/* styling the progress bar */
 .progress-bar {
   height: 5px;
-  background-color: #057ea0; /* Change this color if needed */
+  background-color: #057ea0;
   width: 0%;
 }
 
+/* styling and creating the fade-in transition */
 .fade-in {
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
@@ -722,6 +725,7 @@ section{
   opacity: 1;
 }
 
+/* styling and creating the mouse following animations */
 .follower{
   position: absolute;
   width: 50px;
@@ -735,6 +739,8 @@ section{
   animation-duration: 0.8s;
 
 }
+
+/* styling the keyframes for the follower animations */
 @keyframes follower_animation {
   from{
       opacity: 1;
@@ -748,6 +754,8 @@ section{
 
 
 /* code for the media queries */
+
+/* media queries for devices with maximum width of 991px */
 @media (max-width:991px){
 
   html{
@@ -768,6 +776,7 @@ section{
 
 }
 
+/* media queries for devices with maximum width of 768px */
 @media (max-width:768px){
 
   #menu-btn{
@@ -800,15 +809,16 @@ section{
 
   .progress-bar {
     height: 3px;
-    width: 30px;
+    width: 100%;
   }
 
   .progress-container{
-    width: 30px;
+    width: 100%;
   }
 
 }
 
+/* media queries for devices with maximum width of 450px */
 @media (max-width:450px){
   html{
     font-size: 50%;
@@ -829,14 +839,15 @@ section{
 
   .progress-bar {
     height: 2px;
-    width: 10px;
+    width: 100%;
   }
 
   .progress-container{
-    width: 10px;
+    width: 100%;
   }
 }
 
+/* media queries for devices with maximum width of 360px */
 @media (max-width:360px){
   .header .navbar{
     width: 7rem;
@@ -846,9 +857,9 @@ section{
     transition: .4s linear;
   }
   .progress-bar{
-    width: 5px;
+    width: 100%;
   }
   .progress-container{
-    width: 5px;
+    width: 100%;
   }
 }
