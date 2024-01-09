@@ -1,3 +1,4 @@
+// login form animation
 let loginForm = document.querySelector('.login-form');
 
 document.querySelector('#login-btn').onclick = () =>{
@@ -5,6 +6,7 @@ document.querySelector('#login-btn').onclick = () =>{
     navbar.classList.remove('active');
 }
 
+// navbar animation code
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fadeElements.forEach(function(element, index) {
         setTimeout(function() {
             element.classList.add("active");
-        }, index * 200); // Adjust the delay timing (in milliseconds) between each element
+        }, index * 200);
     });
 });
 
